@@ -17,6 +17,16 @@ export default function IndexPage() {
     <Layout>
       <Head>
         <title>201 Lab</title>
+        <style amp-custom>
+        {`@font-face {
+          font-family: "Eurostile-Extended";
+          src: url("../public/fonts/eurostile-extended.ttf");
+        }
+        body {
+          font-family: "Eurostile-Extended", serif;
+        }`}
+      </style>
+      <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
       </Head>
       <Navbar>
         <Link href="/">
@@ -130,13 +140,9 @@ export default function IndexPage() {
         </div>
       </div>
       <Footer />
-      <style>
-        {`@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap')`};
-      </style> 
       <style jsx>{`
         body {
           color: black;
-          font-family: 'Source Code Pro', monospace;
         }
         h1 {
           font-size: 4em;
