@@ -19,15 +19,18 @@ export default function IndexPage() {
         <title>201 Lab</title>
       </Head>
       <Navbar>
+        <div>
         <Link href="/">
           <a>
-            <img
+          <amp-img
               className="logo"
+              layout="flex-item"
               alt="201 Lab"
               src='/images/201lablogo.png'
             />
           </a>
         </Link>
+        </div>
         <div className="links">
           <Link href="/work?amp=1">
             <a className="nav-link">Work</a>
@@ -97,7 +100,7 @@ export default function IndexPage() {
         <div className="section-image">
           <Link href="/stone?amp=1">
             <a>
-                <amp-img
+            <amp-img
                 alt="Stone and Mist"
                 layout="flex-item"
                 width="400"
@@ -185,6 +188,11 @@ export default function IndexPage() {
         .image-container {
           display: flex; 
           flex-direction: row;
+        }
+        .image-link {
+          position: absolute;
+          width: 400px;
+          height: 430px;
         }
       `}</style>
     </Layout>

@@ -20,8 +20,9 @@ export default function IndexPage() {
       <Navbar>
         <Link href="/">
           <a>
-            <img
+            <amp-img
               className="logo"
+              layout="flex-item"
               alt="201 Lab"
               src='/images/201lablogo.png'
             />

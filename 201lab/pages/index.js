@@ -17,22 +17,14 @@ export default function IndexPage() {
     <Layout>
       <Head>
         <title>201 Lab</title>
-        <style amp-custom>
-        {`@font-face {
-          font-family: "Eurostile-Extended";
-          src: url("../public/fonts/eurostile-extended.ttf");
-        }
-        body {
-          font-family: "Eurostile-Extended", serif;
-        }`}
-      </style>
       <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
       </Head>
       <Navbar>
         <Link href="/">
           <a>
-            <img
+            <amp-img
               className="logo"
+              layout="flex-item"
               alt="201 Lab"
               src='/images/201lablogo.png'
             />
